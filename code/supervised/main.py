@@ -10,7 +10,6 @@ Task:
 
 
 """
-import matplotlib.pyplot as plt
 
 from dataset import RobotDataset
 
