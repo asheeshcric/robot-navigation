@@ -8,8 +8,9 @@ from torch.utils.data import Dataset
 class RobotDataset(Dataset):
     
     
-    def __init__(self, params, transform=None):
+    def __init__(self, params, train=True, transform=None):
         self.params = params
+        self.train = train
         self.transform = transform
         
         # Add all samples from the train_sets
@@ -33,7 +34,8 @@ class RobotDataset(Dataset):
     
     def _get_samples(self):
         dfs = []
-        for dataset in self.params['train_sets']:
+        sets = 'train_sets' if self.train else 'test_sets'
+        for dataset in self.params[sets]:
             csv_path = os.path.join(self.params['root_path'], dataset, 'labels.csv')
             img_labels = pd.read_csv(csv_path, delimiter=',')
             dfs.append(img_labels)
