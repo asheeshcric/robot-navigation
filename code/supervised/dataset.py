@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-from skimage import io
+from PIL import Image
 from torch.utils.data import Dataset
 
 
@@ -23,7 +23,7 @@ class RobotDataset(Dataset):
     def __getitem__(self, idx):
         x = self.samples[idx]
         img_path, label = self.samples[idx]
-        img = io.imread(img_path)
+        img = Image.open(img_path)
         label = self._label_class(label)
         
         # Apply transformations if provided
@@ -41,6 +41,9 @@ class RobotDataset(Dataset):
             dfs.append(img_labels)
             
         df = pd.concat(dfs)
+        # For now, discard images with labels as 'unknown'
+        df = df[df.label != 'unknown']
+        
         label_counts = df['label'].value_counts().to_dict()
         return df.values.tolist(), label_counts
     
