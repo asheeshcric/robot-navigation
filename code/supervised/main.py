@@ -11,6 +11,7 @@ Task:
 
 """
 
+from datetime import datetime
 import torch
 import torch.nn as nn
 from sklearn.metrics import confusion_matrix
@@ -84,7 +85,7 @@ def get_confusion_matrix(params, preds, actual):
     preds = [int(k) for k in preds]
     actual = [int(k) for k in actual]
     
-    cf = confusion_matrix(actual, preds, labels=list(range(params.num_classes)))
+    cf = confusion_matrix(actual, preds, labels=list(range(params['num_classes'])))
     return cf
 
 
