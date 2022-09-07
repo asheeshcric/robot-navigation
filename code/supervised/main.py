@@ -67,7 +67,7 @@ def test(model, data_loader):
         for batch in data_loader:
             if not batch:
                 continue
-            inputs, labels =  batch[0].to(params.device), batch[1].to(params.device)
+            inputs, labels =  batch[0].to(params['device']), batch[1].to(params['device'])
             outputs = model(inputs)
             _, class_pred = torch.max(outputs.data, 1)
             total += labels.size(0)
