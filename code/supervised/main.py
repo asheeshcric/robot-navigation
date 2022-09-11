@@ -44,7 +44,7 @@ def save_results_to_file(model, params, saved_model_file_name, test_loader):
             Train Sets: {params.train_sets}
             Test Sets: {params.test_sets}
             Test Accs: {params.test_accs}
-            Avg. Test Acc: {statistics.mean(params.test_accs)}
+            Avg. Test Acc: {round(statistics.mean(params.test_accs), 2)}
             Confusion Matrix: {confusion_matrix}
             Loss List: {params.losses}
             Num Epochs: {params.num_epochs}
@@ -79,16 +79,16 @@ def train(model, train_loader, test_loader, params):
             _, _, train_acc = test(model, train_loader)
             _, _, val_acc = test(model, test_loader)
             print(f'Epoch: {epoch+1} | Loss: {loss} | Train Acc: {train_acc} | Test Acc: {val_acc}')
-            params.test_accs.append(val_acc)
+            params.test_accs.append(round(val_acc, 2))
         else:
             print('Training epoch...')
             print(f'Epoch: {epoch+1} | Loss: {loss}')
             
-        params.losses.append(loss.item())
+        params.losses.append(round(loss.item(), 1))
             
         # Save checkpoint after every 10 epochs
-        if (epoch+1) % 10 == 0:
-#         if epoch % 2 != 0:
+#         if (epoch+1) % 10 == 0:
+        if epoch % 2 != 0:
             current_time = datetime.now().strftime('%m_%d_%Y_%H_%M')
             saved_model_file_name = f'saved_checkpoints/{params.model_file_name}-{current_time}-lr-{params.learning_rate}-epochs-{epoch+1}-acc-{val_acc:.2f}.pth'
             if not os.path.exists('saved_checkpoints'):
@@ -162,12 +162,18 @@ transforms = {
     'resnet50': models.ResNet50_Weights.DEFAULT.transforms(),
     'resnet18': models.ResNet18_Weights.DEFAULT.transforms(),
     'resnet34': models.ResNet34_Weights.DEFAULT.transforms(),
+    'efficientnet_b0': models.EfficientNet_B0_Weights.DEFAULT.transforms(),
+    'squeezenet1_0': models.SqueezeNet1_0_Weights.DEFAULT.transforms(),
+#     'vit_b_16': models.ViT_B_16_Weights.DEFAULT.transforms(),
 }
 
 base_models = {
     'resnet50': models.resnet50(weights=models.ResNet50_Weights.DEFAULT),
     'resnet18': models.resnet18(weights=models.ResNet18_Weights.DEFAULT),
     'resnet34': models.resnet34(weights=models.ResNet34_Weights.DEFAULT),
+    'efficientnet_b0': models.efficientnet_b0(weights=models.EfficientNet_B0_Weights.DEFAULT),
+    'squeezenet1_0': models.squeezenet1_0(weights=models.SqueezeNet1_0_Weights.DEFAULT),
+#     'vit_b_16': models.vit_b_16(weights=models.ViT_B_16_Weights.DEFAULT),
 }
 
 train_set = RobotDataset(params=params, train=True, transform=transforms[params.base_model])
