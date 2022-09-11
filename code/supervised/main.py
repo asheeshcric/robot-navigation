@@ -11,27 +11,59 @@ Task:
 
 """
 
+import argparse
 from datetime import datetime
+import statistics
+
 import torch
 import torch.nn as nn
 from sklearn.metrics import confusion_matrix
 from torch import optim
-from torchvision.models import ResNet50_Weights
+from torchvision import models
 from torch.utils.data import DataLoader
 
 from dataset import RobotDataset
 from model import EncoderCNN
 
 
-def train(model, train_loader, val_loader, params):
-    loss_function = nn.CrossEntropyLoss(weight=params['class_weights'])
-    optimizer = optim.Adam(model.parameters(), lr=params['learning_rate'])
+def save_results_to_file(model, params, saved_model_file_name, test_loader):
+    # Validate the model
+    preds, actual, acc = test(model, test_loader)
+    print(f'Average Test Accuracy: {statistics.mean(params.test_accs)}')
+    confusion_matrix = get_confusion_matrix(params, preds, actual)
+    print(confusion_matrix)
+    
+    
+    # Write the results to a file
+    with open('results.txt', 'a') as results_file:
+        results_txt = f"""
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: {params.base_model}
+            Labels File: {params.labels_file}
+            Train Sets: {params.train_sets}
+            Test Sets: {params.test_sets}
+            Test Accs: {params.test_accs}
+            Avg. Test Acc: {statistics.mean(params.test_accs)}
+            Confusion Matrix: {confusion_matrix}
+            Loss List: {params.losses}
+            Num Epochs: {params.num_epochs}
+            Batch Size: {params.batch_size}
+            Learning Rate: {params.learning_rate}
+            Saved Model Checkpoint: {saved_model_file_name}
+        """
+        results_file.write(results_txt)
+
+
+def train(model, train_loader, test_loader, params):
+    loss_function = nn.CrossEntropyLoss(weight=params.class_weights)
+    optimizer = optim.Adam(model.parameters(), lr=params.learning_rate)
     
     # Star the training
     print(f'Training...')
-    for epoch in range(params['num_epochs']):
+    for epoch in range(params.num_epochs):
         for batch in train_loader:
-            inputs, labels = batch[0].to(params['device']), batch[1].to(params['device'])
+            inputs, labels = batch[0].to(params.device), batch[1].to(params.device)
             optimizer.zero_grad()
             
             outputs = model(inputs)
@@ -45,16 +77,24 @@ def train(model, train_loader, val_loader, params):
             # Check train and val accuracy after every two epochs
             print('Validating...')
             _, _, train_acc = test(model, train_loader)
-            _, _, val_acc = test(model, val_loader)
-            print(f'Epoch: {epoch+1} | Loss: {loss} | Train Acc: {train_acc} | Validation Acc: {val_acc}')
+            _, _, val_acc = test(model, test_loader)
+            print(f'Epoch: {epoch+1} | Loss: {loss} | Train Acc: {train_acc} | Test Acc: {val_acc}')
+            params.test_accs.append(val_acc)
         else:
             print('Training epoch...')
             print(f'Epoch: {epoch+1} | Loss: {loss}')
             
+        params.losses.append(loss.item())
+            
         # Save checkpoint after every 10 epochs
-        if (epoch+1) % 10 == 0:
+#         if (epoch+1) % 10 == 0:
+        if epoch % 2 != 0:
             current_time = datetime.now().strftime('%m_%d_%Y_%H_%M')
-            torch.save(model.state_dict(), f'{params["file_name"]}-{current_time}-lr-{params["learning_rate"]}-epochs-{epoch+1}-acc-{val_acc:.2f}.pth')
+            saved_model_file_name = f'saved_checkpoints/{params.model_file_name}-{current_time}-lr-{params.learning_rate}-epochs-{epoch+1}-acc-{val_acc:.2f}.pth'
+            if not os.path.exists('saved_checkpoints'):
+                os.makedirs('saved_checkpoints')
+            torch.save(model.state_dict(), saved_model_file_name)
+            save_results_to_file(model, params, saved_model_file_name, test_loader)
     
     print('Training complete')
     return model
@@ -68,7 +108,7 @@ def test(model, data_loader):
         for batch in data_loader:
             if not batch:
                 continue
-            inputs, labels =  batch[0].to(params['device']), batch[1].to(params['device'])
+            inputs, labels =  batch[0].to(params.device), batch[1].to(params.device)
             outputs = model(inputs)
             _, class_pred = torch.max(outputs.data, 1)
             total += labels.size(0)
@@ -85,51 +125,76 @@ def get_confusion_matrix(params, preds, actual):
     preds = [int(k) for k in preds]
     actual = [int(k) for k in actual]
     
-    cf = confusion_matrix(actual, preds, labels=list(range(params['num_classes'])))
+    cf = confusion_matrix(actual, preds, labels=list(range(params.num_classes)))
     return cf
 
 
-params = {
+parser = argparse.ArgumentParser(description='Params for training on navigation images')
+parser.add_argument('--base_model', type=str, default='resnet50', help='Base Encoder that you want on top of your training layer')
+parser.add_argument('--labels_file', type=str, default='labels.csv', help='CSV file name for the labels extracted using the script')
+parser.add_argument('--train_sets', type=str, default='heracleia,mocap', help='Datasets to be used for training. Example: "heracleia,mocap,uc". Choose one or more: comma separated')
+parser.add_argument('--test_sets', type=str, default='uc', help='Datasets you want the model to be tested on. Format same as train_sets')
+parser.add_argument('--num_epochs', type=int, default=10, help='Number of Epochs')
+parser.add_argument('--batch_size', type=int, default=128, help='Batch Size while training')
+parser.add_argument('--learning_rate', type=float, default=0.001, help='Learning Rate for the model')
+parser.add_argument('--num_classes', type=int, default=2, help='Number of classes you want the model to classify: Obstacle, No_Obstacle, Unknown')
+params = parser.parse_args()
+
+# Convert dataset names from string to list
+params.train_sets = params.train_sets.split(',')
+params.test_sets = params.test_sets.split(',')
+
+params.test_accs = []
+params.losses = []
+
+additional_params = {
     'root_path': '/data/zak/rosbag/labeled/',
-    'train_sets': ['heracleia', 'mocap'],
-    'test_sets': ['uc'],
-    'num_classes': 2,
     'device': torch.device('cuda:0' if torch.cuda.is_available() else 'cpu'),
-    'batch_size': 128,
-    'num_epochs': 10,
-    'learning_rate': 0.001,
-    'file_name': 'resnet50_encoder_cnn'
+    'model_file_name': f'{params.base_model}_train_{"_".join(params.train_sets)}_test_{"_".join(params.test_sets)}'
+}
+# Add additional parameters to the argument parser object
+for param in additional_params:
+    setattr(params, param, additional_params[param])
     
+
+    
+transforms = {
+    'resnet50': models.ResNet50_Weights.DEFAULT.transforms(),
+    'resnet18': models.ResNet18_Weights.DEFAULT.transforms(),
+    'resnet34': models.ResNet34_Weights.DEFAULT.transforms(),
 }
 
-transform = ResNet50_Weights.DEFAULT.transforms()
+base_models = {
+    'resnet50': models.resnet50(weights=models.ResNet50_Weights.DEFAULT),
+    'resnet18': models.resnet18(weights=models.ResNet18_Weights.DEFAULT),
+    'resnet34': models.resnet34(weights=models.ResNet34_Weights.DEFAULT),
+}
 
-train_set = RobotDataset(params=params, train=True, transform=transform)
-test_set = RobotDataset(params=params, train=False, transform=transform)
+train_set = RobotDataset(params=params, train=True, transform=transforms[params.base_model])
+test_set = RobotDataset(params=params, train=False, transform=transforms[params.base_model])
 
 # Set class_weights based on the train_set
-params['class_weights'] = torch.FloatTensor(
+params.class_weights = torch.FloatTensor(
         [train_set.class_weights[label] for label in ['obstacle', 'no_obstacle']]
-    ).to(params['device'])
+    ).to(params.device)
 
-encoder_model = EncoderCNN(params=params).to(params['device'])
+encoder_model = EncoderCNN(base_models[params.base_model], params=params).to(params.device)
 
 
 # DataParallel settings
-params['num_gpus'] = torch.cuda.device_count()
-print(f'Number of GPUs available: {params["num_gpus"]}')
-if params['device'].type == 'cuda' and params['num_gpus'] > 1:
-    encoder_model = nn.DataParallel(encoder_model, list(range(params['num_gpus'])))
+params.num_gpus = torch.cuda.device_count()
+print(f'Number of GPUs available: {params.num_gpus}')
+if params.device.type == 'cuda' and params.num_gpus > 1:
+    encoder_model = nn.DataParallel(encoder_model, list(range(params.num_gpus)))
 
 
 # Load train and test datasets
-train_loader = DataLoader(train_set, batch_size=params['batch_size'], shuffle=True)
-test_loader = DataLoader(test_set, batch_size=params['batch_size'], shuffle=True)
+train_loader = DataLoader(train_set, batch_size=params.batch_size, shuffle=True)
+test_loader = DataLoader(test_set, batch_size=params.batch_size, shuffle=True)
 
 # Train
 encoder_model = train(encoder_model, train_loader, test_loader, params)
 
-# Validate the model
-preds, actual, acc = test(encoder_model, test_loader)
-print(f'Validation Accuracy: {acc}')
-print(get_confusion_matrix(params, preds, actual))
+
+
+
