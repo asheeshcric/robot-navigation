@@ -87,7 +87,7 @@ def train(model, train_loader, test_loader, params):
         params.losses.append(round(loss.item(), 1))
             
         # Save checkpoint after every 10 epochs
-        if (epoch+1) % 10 == 0:
+        if (epoch+1) % 5 == 0:
 #         if epoch % 2 != 0:
             current_time = datetime.now().strftime('%m_%d_%Y_%H_%M')
             saved_model_file_name = f'saved_checkpoints/{params.model_file_name}-{current_time}-lr-{params.learning_rate}-epochs-{epoch+1}-acc-{val_acc:.2f}.pth'
