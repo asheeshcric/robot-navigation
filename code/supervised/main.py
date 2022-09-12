@@ -84,7 +84,7 @@ def train(model, train_loader, test_loader, params):
             print('Training epoch...')
             print(f'Epoch: {epoch+1} | Loss: {loss}')
             
-        params.losses.append(round(loss.item(), 1))
+        params.losses.append(round(loss.item(), 2))
             
         # Save checkpoint after every 10 epochs
         if (epoch+1) % 5 == 0:
