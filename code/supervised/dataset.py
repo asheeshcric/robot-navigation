@@ -36,8 +36,8 @@ class RobotDataset(Dataset):
         dfs = []
         sets = 'train_sets' if self.train else 'test_sets'
         for dataset in getattr(self.params, sets):
-            csv_path = os.path.join(self.params.root_path, dataset, 'labels.csv')
-            img_labels = pd.read_csv(csv_path, delimiter=',')
+            csv_path = os.path.join(self.params.root_path, dataset, self.params.labels_file)
+            img_labels = pd.read_csv(csv_path, delimiter=',', index_col=False)
             dfs.append(img_labels)
             
         df = pd.concat(dfs)
