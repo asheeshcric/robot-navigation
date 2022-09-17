@@ -35,7 +35,9 @@ def save_results_to_file(model, params, saved_model_file_name, test_loader):
     
     
     # Write the results to a file
-    with open('results.txt', 'a') as results_file:
+    train_sets, test_sets = "_".join(params.train_sets), "_".join(params.test_sets)
+    results_file_name = f'results/{params.base_model}_train_{train_sets}_test_{test_sets}_{params.labels_file.replace(".csv", "")}.txt'
+    with open(results_file_name, 'a') as results_file:
         results_txt = f"""
         ------------------------------------------------------------------------------------
         ------------------------------------------------------------------------------------
