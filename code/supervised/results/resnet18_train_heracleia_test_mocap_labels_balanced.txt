@@ -1,0 +1,401 @@
+
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88]
+            Avg. Test Acc: 55.88
+            Confusion Matrix: [[1848  143]
+ [1614  377]]
+            Loss List: [0.63, 0.57]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_47-lr-0.0001-epochs-2-acc-55.88.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71]
+            Avg. Test Acc: 56.3
+            Confusion Matrix: [[1875  116]
+ [1608  383]]
+            Loss List: [0.63, 0.57, 0.61, 0.62]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_48-lr-0.0001-epochs-4-acc-56.71.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65]
+            Avg. Test Acc: 56.41
+            Confusion Matrix: [[1891  100]
+ [1626  365]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_50-lr-0.0001-epochs-6-acc-56.65.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25]
+            Avg. Test Acc: 56.37
+            Confusion Matrix: [[1918   73]
+ [1669  322]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_51-lr-0.0001-epochs-8-acc-56.25.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6]
+            Avg. Test Acc: 56.42
+            Confusion Matrix: [[1912   79]
+ [1649  342]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_53-lr-0.0001-epochs-10-acc-56.60.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23]
+            Avg. Test Acc: 56.39
+            Confusion Matrix: [[1913   78]
+ [1665  326]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_55-lr-0.0001-epochs-12-acc-56.23.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58]
+            Avg. Test Acc: 56.56
+            Confusion Matrix: [[1889  102]
+ [1587  404]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_56-lr-0.0001-epochs-14-acc-57.58.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63]
+            Avg. Test Acc: 56.69
+            Confusion Matrix: [[1889  102]
+ [1585  406]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_58-lr-0.0001-epochs-16-acc-57.63.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06]
+            Avg. Test Acc: 56.73
+            Confusion Matrix: [[1892   99]
+ [1611  380]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_18_59-lr-0.0001-epochs-18-acc-57.06.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88]
+            Avg. Test Acc: 56.75
+            Confusion Matrix: [[1913   78]
+ [1639  352]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_01-lr-0.0001-epochs-20-acc-56.88.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06]
+            Avg. Test Acc: 56.78
+            Confusion Matrix: [[1900   91]
+ [1619  372]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_03-lr-0.0001-epochs-22-acc-57.06.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58]
+            Avg. Test Acc: 56.84
+            Confusion Matrix: [[1869  122]
+ [1567  424]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_04-lr-0.0001-epochs-24-acc-57.58.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01]
+            Avg. Test Acc: 56.93
+            Confusion Matrix: [[1854  137]
+ [1535  456]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_06-lr-0.0001-epochs-26-acc-58.01.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86]
+            Avg. Test Acc: 56.93
+            Confusion Matrix: [[1896   95]
+ [1623  368]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_07-lr-0.0001-epochs-28-acc-56.86.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84]
+            Avg. Test Acc: 56.99
+            Confusion Matrix: [[1863  128]
+ [1551  440]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_09-lr-0.0001-epochs-30-acc-57.84.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21]
+            Avg. Test Acc: 57.06
+            Confusion Matrix: [[1840  151]
+ [1513  478]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_10-lr-0.0001-epochs-32-acc-58.21.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11]
+            Avg. Test Acc: 57.13
+            Confusion Matrix: [[1849  142]
+ [1526  465]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_12-lr-0.0001-epochs-34-acc-58.11.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01]
+            Avg. Test Acc: 57.12
+            Confusion Matrix: [[1878  113]
+ [1599  392]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_14-lr-0.0001-epochs-36-acc-57.01.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01, 57.79]
+            Avg. Test Acc: 57.15
+            Confusion Matrix: [[1850  141]
+ [1540  451]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37, 0.45, 0.36]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_15-lr-0.0001-epochs-38-acc-57.79.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01, 57.79, 58.16]
+            Avg. Test Acc: 57.2
+            Confusion Matrix: [[1842  149]
+ [1517  474]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37, 0.45, 0.36, 0.4, 0.46]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_17-lr-0.0001-epochs-40-acc-58.16.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01, 57.79, 58.16, 58.89]
+            Avg. Test Acc: 57.29
+            Confusion Matrix: [[1827  164]
+ [1473  518]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37, 0.45, 0.36, 0.4, 0.46, 0.34, 0.4]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_18-lr-0.0001-epochs-42-acc-58.89.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01, 57.79, 58.16, 58.89, 58.24]
+            Avg. Test Acc: 57.33
+            Confusion Matrix: [[1843  148]
+ [1515  476]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37, 0.45, 0.36, 0.4, 0.46, 0.34, 0.4, 0.43, 0.4]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_20-lr-0.0001-epochs-44-acc-58.24.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01, 57.79, 58.16, 58.89, 58.24, 59.07]
+            Avg. Test Acc: 57.4
+            Confusion Matrix: [[1818  173]
+ [1457  534]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37, 0.45, 0.36, 0.4, 0.46, 0.34, 0.4, 0.43, 0.4, 0.42, 0.37]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_21-lr-0.0001-epochs-46-acc-59.07.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01, 57.79, 58.16, 58.89, 58.24, 59.07, 57.48]
+            Avg. Test Acc: 57.41
+            Confusion Matrix: [[1857  134]
+ [1559  432]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37, 0.45, 0.36, 0.4, 0.46, 0.34, 0.4, 0.43, 0.4, 0.42, 0.37, 0.47, 0.36]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_23-lr-0.0001-epochs-48-acc-57.48.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: resnet18
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia']
+            Test Sets: ['mocap']
+            Test Accs: [55.88, 56.71, 56.65, 56.25, 56.6, 56.23, 57.58, 57.63, 57.06, 56.88, 57.06, 57.58, 58.01, 56.86, 57.84, 58.21, 58.11, 57.01, 57.79, 58.16, 58.89, 58.24, 59.07, 57.48, 58.26]
+            Avg. Test Acc: 57.44
+            Confusion Matrix: [[1834  157]
+ [1505  486]]
+            Loss List: [0.63, 0.57, 0.61, 0.62, 0.54, 0.51, 0.6, 0.52, 0.52, 0.5, 0.52, 0.57, 0.54, 0.51, 0.45, 0.53, 0.5, 0.4, 0.54, 0.5, 0.53, 0.44, 0.45, 0.46, 0.56, 0.46, 0.45, 0.41, 0.42, 0.46, 0.53, 0.4, 0.4, 0.45, 0.37, 0.37, 0.45, 0.36, 0.4, 0.46, 0.34, 0.4, 0.43, 0.4, 0.42, 0.37, 0.47, 0.36, 0.42, 0.41]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/resnet18_train_heracleia_test_mocap-09_13_2022_19_25-lr-0.0001-epochs-50-acc-58.26.pth
+        

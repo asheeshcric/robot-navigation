@@ -1,0 +1,401 @@
+
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5]
+            Avg. Test Acc: 52.5
+            Confusion Matrix: [[1060  121]
+ [1001  180]]
+            Loss List: [0.64, 0.58]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_16_53-lr-0.0001-epochs-2-acc-52.50.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54]
+            Avg. Test Acc: 52.52
+            Confusion Matrix: [[1074  107]
+ [1014  167]]
+            Loss List: [0.64, 0.58, 0.55, 0.57]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_16_56-lr-0.0001-epochs-4-acc-52.54.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09]
+            Avg. Test Acc: 52.71
+            Confusion Matrix: [[1084   97]
+ [1011  170]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_16_59-lr-0.0001-epochs-6-acc-53.09.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28]
+            Avg. Test Acc: 53.1
+            Confusion Matrix: [[1063  118]
+ [ 962  219]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_02-lr-0.0001-epochs-8-acc-54.28.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4]
+            Avg. Test Acc: 53.36
+            Confusion Matrix: [[1064  117]
+ [ 960  221]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_05-lr-0.0001-epochs-10-acc-54.40.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67]
+            Avg. Test Acc: 53.75
+            Confusion Matrix: [[1048  133]
+ [ 914  267]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_08-lr-0.0001-epochs-12-acc-55.67.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77]
+            Avg. Test Acc: 54.18
+            Confusion Matrix: [[1037  144]
+ [ 877  304]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_11-lr-0.0001-epochs-14-acc-56.77.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49]
+            Avg. Test Acc: 54.59
+            Confusion Matrix: [[1039  142]
+ [ 862  319]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_14-lr-0.0001-epochs-16-acc-57.49.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82]
+            Avg. Test Acc: 54.84
+            Confusion Matrix: [[1057  124]
+ [ 896  285]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_17-lr-0.0001-epochs-18-acc-56.82.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81]
+            Avg. Test Acc: 55.24
+            Confusion Matrix: [[1031  150]
+ [ 823  358]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_20-lr-0.0001-epochs-20-acc-58.81.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01]
+            Avg. Test Acc: 55.76
+            Confusion Matrix: [[1015  166]
+ [ 755  426]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_23-lr-0.0001-epochs-22-acc-61.01.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68]
+            Avg. Test Acc: 56.01
+            Confusion Matrix: [[1041  140]
+ [ 836  345]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_26-lr-0.0001-epochs-24-acc-58.68.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02]
+            Avg. Test Acc: 56.24
+            Confusion Matrix: [[1043  138]
+ [ 830  351]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_29-lr-0.0001-epochs-26-acc-59.02.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31]
+            Avg. Test Acc: 56.46
+            Confusion Matrix: [[1042  139]
+ [ 822  359]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_32-lr-0.0001-epochs-28-acc-59.31.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47]
+            Avg. Test Acc: 56.79
+            Confusion Matrix: [[1027  154]
+ [ 756  425]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_35-lr-0.0001-epochs-30-acc-61.47.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72]
+            Avg. Test Acc: 56.91
+            Confusion Matrix: [[1056  125]
+ [ 850  331]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_38-lr-0.0001-epochs-32-acc-58.72.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26]
+            Avg. Test Acc: 57.17
+            Confusion Matrix: [[1034  147]
+ [ 768  413]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_41-lr-0.0001-epochs-34-acc-61.26.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89]
+            Avg. Test Acc: 57.54
+            Confusion Matrix: [[997 184]
+ [669 512]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_44-lr-0.0001-epochs-36-acc-63.89.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89, 62.79]
+            Avg. Test Acc: 57.82
+            Confusion Matrix: [[1009  172]
+ [ 707  474]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37, 0.36, 0.37]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_47-lr-0.0001-epochs-38-acc-62.79.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89, 62.79, 62.45]
+            Avg. Test Acc: 58.05
+            Confusion Matrix: [[1012  169]
+ [ 718  463]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37, 0.36, 0.37, 0.33, 0.42]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_50-lr-0.0001-epochs-40-acc-62.45.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89, 62.79, 62.45, 62.7]
+            Avg. Test Acc: 58.27
+            Confusion Matrix: [[1028  153]
+ [ 728  453]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37, 0.36, 0.37, 0.33, 0.42, 0.44, 0.35]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_53-lr-0.0001-epochs-42-acc-62.70.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89, 62.79, 62.45, 62.7, 60.84]
+            Avg. Test Acc: 58.39
+            Confusion Matrix: [[1043  138]
+ [ 787  394]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37, 0.36, 0.37, 0.33, 0.42, 0.44, 0.35, 0.48, 0.41]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_56-lr-0.0001-epochs-44-acc-60.84.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89, 62.79, 62.45, 62.7, 60.84, 64.69]
+            Avg. Test Acc: 58.66
+            Confusion Matrix: [[996 185]
+ [649 532]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37, 0.36, 0.37, 0.33, 0.42, 0.44, 0.35, 0.48, 0.41, 0.42, 0.38]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_17_59-lr-0.0001-epochs-46-acc-64.69.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89, 62.79, 62.45, 62.7, 60.84, 64.69, 64.14]
+            Avg. Test Acc: 58.89
+            Confusion Matrix: [[1010  171]
+ [ 676  505]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37, 0.36, 0.37, 0.33, 0.42, 0.44, 0.35, 0.48, 0.41, 0.42, 0.38, 0.31, 0.38]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_18_02-lr-0.0001-epochs-48-acc-64.14.pth
+        
+        ------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------
+            Base Model: efficientnet_b0
+            Labels File: labels_balanced.csv
+            Train Sets: ['heracleia', 'mocap']
+            Test Sets: ['uc']
+            Test Accs: [52.5, 52.54, 53.09, 54.28, 54.4, 55.67, 56.77, 57.49, 56.82, 58.81, 61.01, 58.68, 59.02, 59.31, 61.47, 58.72, 61.26, 63.89, 62.79, 62.45, 62.7, 60.84, 64.69, 64.14, 64.82]
+            Avg. Test Acc: 59.13
+            Confusion Matrix: [[981 200]
+ [631 550]]
+            Loss List: [0.64, 0.58, 0.55, 0.57, 0.54, 0.61, 0.49, 0.53, 0.56, 0.46, 0.49, 0.58, 0.47, 0.53, 0.4, 0.37, 0.53, 0.41, 0.39, 0.46, 0.48, 0.46, 0.45, 0.47, 0.57, 0.42, 0.46, 0.41, 0.36, 0.41, 0.41, 0.37, 0.49, 0.41, 0.4, 0.37, 0.36, 0.37, 0.33, 0.42, 0.44, 0.35, 0.48, 0.41, 0.42, 0.38, 0.31, 0.38, 0.42, 0.34]
+            Num Epochs: 50
+            Batch Size: 128
+            Learning Rate: 0.0001
+            Saved Model Checkpoint: saved_checkpoints/efficientnet_b0_train_heracleia_mocap_test_uc-09_13_2022_18_05-lr-0.0001-epochs-50-acc-64.82.pth
+        
