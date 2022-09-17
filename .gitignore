@@ -1,6 +1,9 @@
 # Ignore saved checkpoints for the trained models
 saved_checkpoints
 
+# Ignore .swp files
+*.swp
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
