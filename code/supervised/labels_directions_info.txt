@@ -1,0 +1,35 @@
+---------------------------------
+For uc Dataset:
+FORWARD    24653
+LEFT        2992
+RIGHT       2689
+STOP        2485
+UNKNOWN     1421
+Name: label, dtype: int64
+---------------------------------
+For erb Dataset:
+Series([], Name: label, dtype: int64)
+---------------------------------
+For nh Dataset:
+FORWARD    3731
+LEFT        324
+RIGHT       260
+STOP        159
+UNKNOWN     136
+Name: label, dtype: int64
+---------------------------------
+For heracleia Dataset:
+FORWARD    3821
+RIGHT      1553
+LEFT       1451
+STOP       1269
+UNKNOWN     756
+Name: label, dtype: int64
+---------------------------------
+For mocap Dataset:
+FORWARD    4319
+LEFT       1347
+STOP       1184
+RIGHT      1010
+UNKNOWN     631
+Name: label, dtype: int64
